@@ -20,7 +20,9 @@ public class PopPlaylist {
         return popPlaylist; // Return the list of Song objects
     }
 
-    public String shuffleplay() {
+    public String shuffleplay() { // I've only created a shuffle play method, you need to create all the other ones like add song remove song.., just 
+        //look at the options menu on what else u need to do, u need to change each playlist so that they alll have the methods in them.
+        
         if (popPlaylist.isEmpty()) {
             return "No songs available to shuffle"; // Return a message if empty
         }
@@ -38,7 +40,8 @@ public class PopPlaylist {
             choice = menuchoice.nextInt(); // Get user choice
 
             if (choice == 1) {
-                System.out.println("Playing a specific song...");
+                System.out.println("Playing a specific song..."); //once youve created a choose a song method u can add it in the output e.g. specificsong() 
+                //if thats what you've called the method 
             } else if (choice == 2) {
                 System.out.println("Random Song: " + shuffleplay());
             } else if (choice == 3) {
